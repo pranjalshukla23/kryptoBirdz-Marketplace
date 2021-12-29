@@ -1,0 +1,28 @@
+we have 5 contracts:
+
+1. ERC165 - stores fingerprints of all other contract's functions
+          - inherits IERC615
+2. ERC721 - contains ERC721 contract functions defined in EIP for ERC721
+          - inherits IERC721 , Counters library and ERC165 contract
+3. ERC721Enumerable - contains ER721Enumerable contract functions defined in EIP for ERC721Enumerable
+                    - inherits ERC721 Contract
+4. ERC721Metadata - contains ERC721Metadata contract functions defined in EIP for ERC721MetaData
+                  - inherits ERC165 contract
+5. ERC721Connector - inherits ERC721MetaData and ERC721Enumerable
+6.KryptoBirdz -  main NFT Contract
+             - inherits ERC721Connector
+
+we have 4 interfaces:
+
+1. IERC165 - for ERC165
+2. IERC721 - for ERC721
+3. IERC721Enumerable -  for ERC721Enumerable
+4. IERC721Metadata - for ERC721Metadata
+
+we have 2 libraries:
+
+1. Counters - inherits arithematic functions of safemath
+2. SafeMath - defines arithematic functions to prevent underflow and overflow
+
+
+
